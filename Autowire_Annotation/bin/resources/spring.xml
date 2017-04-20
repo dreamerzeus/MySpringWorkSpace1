@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+
+<bean id="e1" class="pojo.Engine">
+<property name="engType" value="V2"></property>
+</bean>
+
+<bean id="e2" class="pojo.Engine">
+<property name="engType" value="V2"></property>
+</bean>
+
+<bean id="c" class="pojo.Car">
+
+</bean>
+
+</beans>
