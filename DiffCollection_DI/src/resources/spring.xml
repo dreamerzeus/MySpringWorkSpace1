@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+      
+<bean id="t" class="pojo.Beans">
+
+<property name="name">
+<util:list list-class="java.util.Vector">
+<value>rahul</value>
+<value>pratap</value>
+<value>yagnya</value>
+</util:list>
+</property>
+
+<property name="title">
+<util:set set-class="java.util.TreeSet">
+<value>singh</value>
+<value>singh</value>
+<value>dutta</value>
+</util:set>
+</property>
+
+<property name="cc">
+<util:map map-class="java.util.Hashtable">
+<entry key="india" value="delhi"/>
+<entry key="bangaldesh" value="dhaka"/>
+<entry key="nepal" value="bhutan"/>
+</util:map>
+
+</property>
+
+</bean> 
+</beans>
