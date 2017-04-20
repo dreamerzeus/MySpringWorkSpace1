@@ -1,0 +1,35 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+ 
+ <bean id="t" class="beans.Pojo">
+  <property name="fruit">
+   <list>
+   <value>mango</value>
+   <value>guava</value>
+   <value>apple</value>
+   </list>
+   </property>
+   
+   <property name="cricketers">
+   <set>
+   <value>sachin</value>
+   <value>dhoni</value>
+   <value>rahul</value>
+   </set>
+  </property>
+  
+   <property name="countryCap">
+   <map>
+   <entry key="india" value="delhi"/>
+   <entry key="bangaldesh" value="dhaka"/>
+   <entry key="nepal" value="bhutan"/>
+   </map>
+   </property>
+  
+   </bean>
+  
+   </beans>
+ 
